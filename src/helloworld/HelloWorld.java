@@ -74,6 +74,8 @@ public class HelloWorld extends Application {
         grid.add(hbBtn, 1, 4);
         Scene scene = new Scene(grid,350,275);
         primaryStage.setScene(scene);
+        scene.getStylesheets().add
+                (HelloWorld.class.getResource("Login.css").toExternalForm());
         primaryStage.show();
     }
 
@@ -82,3 +84,4 @@ public class HelloWorld extends Application {
         launch(args);
     }
 }
+//https://docs.oracle.com/javase/8/javafx/get-started-tutorial/css.htm#BABBGJBI
